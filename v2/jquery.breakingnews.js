@@ -1,3 +1,10 @@
+/* 
+** author: danginhtu
+** website: danginhtu.com
+** project https://github.com/dangdinhtu2014/BreakingNews
+** version 1.0
+*/
+
 jQuery(function() {
 	$.fn.breakingnews = function(settings) {
 		var defaults = {
