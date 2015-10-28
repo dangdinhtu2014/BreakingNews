@@ -6,8 +6,88 @@
 	<meta name="generator" content="Dang Dinh Tu" />
 	<link rel="StyleSheet" href="css/style.css">
 	<link rel="StyleSheet" href="jquery.breakingnews.css">
+	<link href="https://plus.google.com/104032206920095269931/" rel="author" />
+	<meta property="og:title" content="Breaking news demo - Blog Đặng Đình Tứ" />
+	<meta property="og:type" content="article" />
+	<meta property="og:description" content="Breaking news demo - Blog Đặng Đình Tứ" />
+	<meta property="og:site_name" content="Blog Đặng Đình Tứ" />
+	<meta property="og:image" content="https://cloud.githubusercontent.com/assets/6817130/10767426/ac1f56e8-7d0e-11e5-901d-7994888891dc.jpg" />
+	<meta property="og:url" content="http://dangdinhtu.com/demo/breakingnews/v1/demo.html" />
+	<meta property="fb:app_id" content="756578357746323" />
+	<meta property="fb:admins" content="100001351285520" />
+
+
+	<script type="text/javascript">
+	//<![CDATA[
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-58552847-1', '.dangdinhtu.com');
+	ga('send', 'pageview');
+	//]]>
+	</script>
 </head>
+
+
 <body>
+<script type="text/javascript">
+//<![CDATA[
+(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&appId=756578357746323&version=v2.0";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+//]]>
+</script>
+<header>
+	<h1>Breaking News Ticker</h1>
+    <h3>Jquery Plugin</h3>
+    <h3>Github Project <a href="https://github.com/dangdinhtu2014/BreakingNews" target="_blank">https://github.com/dangdinhtu2014/BreakingNews</a></h3>
+	<div style="display:inline-block">
+			<div class="g-plusone" data-size="tall" data-annotation="inline" data-width="300" data-href="http://dangdinhtu.com/demo/breakingnews/v1/demo.html"></div>
+	<script type="text/javascript">
+	//<![CDATA[
+	window.___gcfg = {lang: 'vi'};
+	(function() {
+	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	po.src = 'https://apis.google.com/js/platform.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	})();
+	//]]>
+	</script>
+	</div>
+	<div style="display:inline-block">
+	<div id="fb-root"></div>
+	<script type="text/javascript">
+	//<![CDATA[
+	$(document).ready(function() {
+		$.ajaxSetup({
+			cache: true
+		});
+		$.getScript('//connect.facebook.net/vi_VN/all.js', function() {
+				FB.init({
+				appId: '756578357746323',
+				version: 'v2.0',
+				xfbml: 1
+			});
+			FB.Event.subscribe('comment.create', function(e) {
+				BL.addCommentOnly(52);
+			});
+			FB.Event.subscribe('comment.remove', function(e) {
+				BL.delCommentOnly(52);
+			});
+		});
+	});
+	//]]>
+	</script>
+	<div class="fb-like" data-href="http://dangdinhtu.com/demo/breakingnews/v1/demo.htmll" data-width="200" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+
+	</div>
+</header>
+
 	<div class="demo demo1">
 		<div class="breakingnewsController easing" id="breakingnews1">
 			<div class="bn-title"></div>

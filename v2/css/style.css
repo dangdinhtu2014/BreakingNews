@@ -1,7 +1,6 @@
-body {
-    padding: 0;
-    margin: 0;
-    font-family: 'PT Sans';
-    font-size: 16px;
-    background: url(../images/pattern.png);
-}
+body{padding:0; margin:0; font-family:Arial; font-size:16px; background:url(../images/pattern.png);}
+header{width:100%; padding:50px 0; text-align:center; color:#FFF;}
+header h1{ font-size:48px;}
+header a{color:#FFF; text-decoration:none; display:inline-block; padding:5px 10px; }
+header a:hover{border-color:#c30;}
+header a.active{background:#FFF; color:#333;}
